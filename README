@@ -1,0 +1,76 @@
+Name: Akshay Deepak Hegde
+USC NetID: hegdeaks
+CS 455 PA4
+FALL 2018
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+
+Akshay Deepak Hegde
+
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+Arrays.sort() is used to sort a string alphabetically.
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+--
+
+----------------------------------------------
+DESCRIPTION OF YOUR CLASS DESIGN AND ALGORITHMS AND DATA STRUCTURES USED:
+
+WordFinder class ->
+Contains the main method and is responsible for processing the command-line argument, and handling any error processing.
+It stores an instance of AnagramDictionary and ScoreTable classes.
+ArrayList is been used to save all subsets of the rack and all possible anagrams.
+A TreeMap is used with the keys as scores and arraylist of all words that make that score as values.
+ArrayList with each key is sorted alphabetically and treemap is sorted in reverse order to get the required output.
+
+Rack class ->
+Corresponds to the idea of the rack.
+It stores the current rack of letters by using a string and integer array.
+They are then fed to allSubsets method which creates all possible subsets of a word.
+So an instance of Rack is used wherever our application is using a rack
+
+AnagramDictionary class ->
+Contains the dictionary data organized by anagrams.
+A HashMap is used with the word in canonical form as keys and
+each key contains all the words that are anagrams of that key as arraylist of strings
+This arraylist is the value associated with corresponding key.
+Time is taken to sort the letters in the given string and 
+all anagrams of the string is found in linear time
+
+ScoreTable class ->
+Contains information about scrabble scores for scrabble letters and words.
+A TreeMap is used to map the scores to the letters.
+Each character is used as a key and score related to that character as value.
+Works fine for the both upper case and lower case letters.
+
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+--
+
+
+
+
+
